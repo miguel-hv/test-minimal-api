@@ -1,0 +1,34 @@
+﻿@TodoApiMinimal_HostAddress = https://localhost:7251
+
+POST {{TodoApiMinimal_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true,
+  "secret": "yes"
+}
+
+###
+
+GET {{TodoApiMinimal_HostAddress}}/todoitems
+
+###
+
+GET {{TodoApiMinimal_HostAddress}}/todoitems/1
+
+###
+Put {{TodoApi_HostAddress}}/todoitems/{id}
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+
+###
+
+DELETE {{TodoApi_HostAddress}}/todoitems/1
+
+###
+
